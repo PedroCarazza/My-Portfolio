@@ -35,7 +35,7 @@ export const Footer = (): JSX.Element => {
             gap: "$2",
           }}
         >
-          <Button
+          {/* <Button
             className="instagram"
             type="circle"
             as="a"
@@ -43,7 +43,7 @@ export const Footer = (): JSX.Element => {
             href={`https://instagram.com/${userData.instagramUser}`}
           >
             <FaInstagram />
-          </Button>
+          </Button> */}
           <Button
             className="facebook"
             type="circle"

@@ -78,15 +78,17 @@ export const globalStyles = globalCss({
     scrollBehavior: "smooth",
   },
   a: { textDecoration: "none" },
+  
 });
 
 export const GlobalStyle = ({ children }: GlobalStyleProps): JSX.Element => {
 
   const theme = createTheme({
     colors: {
-      brand1: "#623CEA",
-      brand2: "#311E75",
-
+      brand1: "#b63cea",
+      brand2: "#b30b9f",
+      gradientText: "linear-gradient(to right, #b63cea 0%, #63b6df 80.48%, #5ed2ec 100%)",
+      gradientText2: "linear-gradient(to right, #5ed2ec 0%, #63b6df 34.48%, #b63cea 100%)",
       grey0: "#0A0A0B",
       grey1: "#121214",
       grey2: "#868E96",

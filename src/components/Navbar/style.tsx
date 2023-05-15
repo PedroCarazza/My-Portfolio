@@ -26,7 +26,7 @@ export const LogoTipo = styled(Flex, {
   alignItems: "center",
 });
 
-export const LogoTipoText = styled("span", {
+export const LogoTipoText = styled("p", {
   fontSize: "1.25rem",
   fontWeight: 600,
   color: "$grey4",
@@ -34,6 +34,10 @@ export const LogoTipoText = styled("span", {
   "@mobile": {
     fontSize: "1rem",
   },
+
+  span: {
+    color: "$brand1",
+  }
 });
 
 export const NavbarLinks = styled(Flex, {

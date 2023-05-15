@@ -52,4 +52,9 @@ export const StackCard = styled("div", {
       animation: `${scaleUp} 200ms`,
     },
   },
+
+  "&:hover svg": {
+    transform: "scale(1.2)", /* Adicione este trecho para o efeito hover no ícone */
+    transition: "transform 0.8s ease-out",
+  },
 });

@@ -3,8 +3,11 @@ import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
 
-import meIlustration from "@/public/static/img/background/me-ilustration.svg";
-import backgroundImg from "@/public/static/img/background/header-bg.svg";
+// import meIlustration from "@/public/static/img/background/me-ilustration.svg";
+// import backgroundImg from "@/public/static/img/background/header-bg.svg";
+import backgroundImg from "@/public/static/img/background/leandromatrix.png";
+// import backgroundImg from "@/public/static/img/background/leandrosquare.png";
+
 
 import dots from "@/public/static/img/background/dots.svg";
 
@@ -12,10 +15,12 @@ export const Header = styled("header", {
   backgroundColor: "$grey1",
   padding: "12rem 0 8rem 0",
   backgroundImage: `url(${backgroundImg})`,
+  backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
   borderBottom: "2px solid $grey5",
+  // filter: "grayscale(100%)", // Adicionando o filtro para deixar a imagem em preto e branco
   "@tablet": {
     backgroundPosition: "right -10% center",
   },
@@ -28,7 +33,40 @@ export const Header = styled("header", {
   },
 });
 
+export const DivAbout = styled("div", {
+  backgroundColor: "transparent",
+  color: "$grey4",
+  display: "flex",
+
+  p: {
+    display: "flex",
+    fontSize: "$title3",
+    alignItems: "center",
+  },
+
+  span: {
+    marginLeft: "10px",
+    background: "$gradientText",
+    backgroundClip: "text",
+    color: "transparent",
+    fontWeight: "800",
+    fontSize: "40px"
+  },
+  "@tablet": {
+    backgroundPosition: "right -10% center",
+  },
+  "@mobile": {
+    // padding: "9rem 0 6rem 0",
+    backgroundImage: `none`,
+  },
+  "@mobileLittle": {
+    flexDirection: "column",
+    // padding: "9rem 0 0 0",
+  },
+})
+
 export const HeaderContent = styled("div", {
+  justifyContent: "center",
   maxWidth: "100%",
   width: "36rem",
   display: "flex",
@@ -39,6 +77,13 @@ export const HeaderContent = styled("div", {
   },
   "@mobile": {
     width: "100%",
+  },
+
+  h1: {
+    color: "$brand1",
+    span: {
+      // color: "$brand1",
+    },
   },
 });
 

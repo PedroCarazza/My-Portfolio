@@ -1,3 +1,4 @@
+import { TypeAnimation } from "react-type-animation"
 // Styles
 import { Container, Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
@@ -25,6 +26,7 @@ import {
   ProjectsAreaSocialMediaMessage,
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
+  DivAbout
 } from "./style";
 
 export const Home = (): JSX.Element => {
@@ -36,17 +38,24 @@ export const Home = (): JSX.Element => {
       <Header>
         <Container>
           <HeaderContent>
-            <Flex>
-              <UserImage
-                src={`https://github.com/${userData.githubUser}.png`}
-                alt={userData.nameUser}
-                title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
+            <h1>
+              LEANDRO <span>ALVES</span>
+            </h1>
+            <DivAbout>
+              <p>I am a developer </p>
+              <TypeAnimation sequence={[
+                "Frontend",
+                2000,
+                "Backend",
+                2000,
+              ]}
+                speed={50}
+                className="text-change"
+                wrapper="span"
+                repeat={Infinity}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
-            </Flex>
-            <Text as="h1" type="heading1" color="grey5">
+            </DivAbout>
+            {/* <Text as="h1" type="heading1" color="grey5">
             I{" "}
               <Text as="span" type="heading1" color="brand1">
                 love
@@ -56,17 +65,16 @@ export const Home = (): JSX.Element => {
                 developing
               </Text>{" "}
               projects
-            </Text>
+            </Text> */}
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+            I am a web developer passionate about creating incredible digital solutions. Completing one year of experience in the field, I have strong skills in programming languages such as HTML, CSS, JavaScript, TypeScript, and Python, as well as popular frameworks like React and Node.js. Additionally, I have knowledge in code versioning using Git and in relational databases, especially PostgreSQL. My approach combines creativity and functionality to deliver efficient and visually appealing web products. I have worked on a variety of challenging projects, from corporate websites to complex web applications, always striving for technical excellence and user experience.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
                 See Projects
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Dwonload CV
               </Button>
               <Button
                 color="grey5"

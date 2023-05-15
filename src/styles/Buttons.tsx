@@ -22,16 +22,24 @@ export const Button = styled("button", {
   variants: {
     type: {
       btLink: {
-        background: "transparent",
+        background: "$gradientText",
+        backgroundClip: "text",
+        color: "transparent",
         borderColor: "transparent",
-        fontWeight: "500",
+        // fontWeight: "800",
+        fontSize: "$title4",
+        transition: "color 0.5s ease-in-out",
+        "&:hover": {
+          background: "$gradientText2",
+          backgroundClip: "text",
+        }
       },
       primary: {
-        background: "$brand1",
+        background: "$gradientText",
         borderColor: "$brand1",
         color: "$whiteFixed",
         "&:hover": {
-          backgroundColor: "$brand2",
+          background: "$gradientText2",
           borderColor: "$brand2",
         },
         "@mobile": {
