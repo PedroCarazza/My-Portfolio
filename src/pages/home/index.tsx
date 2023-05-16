@@ -55,25 +55,14 @@ export const Home = (): JSX.Element => {
                 repeat={Infinity}
               />
             </DivAbout>
-            {/* <Text as="h1" type="heading1" color="grey5">
-            I{" "}
-              <Text as="span" type="heading1" color="brand1">
-                love
-              </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
-              </Text>{" "}
-              projects
-            </Text> */}
             <Text type="body1" color="grey2">
-            I am a web developer passionate about creating incredible digital solutions. Completing one year of experience in the field, I have strong skills in programming languages such as HTML, CSS, JavaScript, TypeScript, and Python, as well as popular frameworks like React and Node.js. Additionally, I have knowledge in code versioning using Git and in relational databases, especially PostgreSQL. My approach combines creativity and functionality to deliver efficient and visually appealing web products. I have worked on a variety of challenging projects, from corporate websites to complex web applications, always striving for technical excellence and user experience.
+            Web developer passionate about creating incredible digital solutions. Completing one year of experience in the field, I have strong skills in programming languages such as HTML, CSS, JavaScript, TypeScript, and Python, as well as popular frameworks like React and Node.js. Additionally, I have knowledge in code versioning using Git and in relational databases, especially PostgreSQL. My approach combines creativity and functionality to deliver efficient and visually appealing web products. I have worked on a variety of challenging projects, from corporate websites to complex web applications, always striving for technical excellence and user experience.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
                 See Projects
               </Button>
-              <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
+              <Button as="a" type="outline" target="_blank" href={"https://1drv.ms/w/s!AiTYkTAo6Q93gYAOYJqAIPbBsG1n3w?e=hDZ7nM"} download="nome_do_seu_cv.pdf">
                 Dwonload CV
               </Button>
               <Button

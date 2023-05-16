@@ -2,13 +2,7 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
-
-// import meIlustration from "@/public/static/img/background/me-ilustration.svg";
-// import backgroundImg from "@/public/static/img/background/header-bg.svg";
 import backgroundImg from "@/public/static/img/background/leandromatrix.png";
-// import backgroundImg from "@/public/static/img/background/leandrosquare.png";
-
-
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
@@ -20,7 +14,6 @@ export const Header = styled("header", {
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
   borderBottom: "2px solid $grey5",
-  // filter: "grayscale(100%)", // Adicionando o filtro para deixar a imagem em preto e branco
   "@tablet": {
     backgroundPosition: "right -10% center",
   },
@@ -56,12 +49,10 @@ export const DivAbout = styled("div", {
     backgroundPosition: "right -10% center",
   },
   "@mobile": {
-    // padding: "9rem 0 6rem 0",
     backgroundImage: `none`,
   },
   "@mobileLittle": {
     flexDirection: "column",
-    // padding: "9rem 0 0 0",
   },
 })
 
@@ -129,6 +120,18 @@ export const StackCards = styled("div", {
   padding: "3rem 0",
   gap: "6rem",
   marginTop: "$4",
+
+  img: {
+    borderRadius: "20%",
+    filter: "grayscale(100%)",
+    "&:hover": {
+      filter: "grayscale(0%)",
+      transition: "transform 0.5s ease-in-out",
+      transform: "scale(1.2)",
+    },
+  },
+
+    
 
   "@tablet": {
     gridTemplateColumns: "1fr 1fr 1fr",

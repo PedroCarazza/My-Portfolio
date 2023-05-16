@@ -37,7 +37,7 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <LogoTipoText>{userData.nameUser}<span> Portifolio</span></LogoTipoText>
+            <LogoTipoText>ALVES<span> Portifolio</span></LogoTipoText>
           </LogoTipo>
           {isWide && (
             <Button
@@ -53,6 +53,7 @@ export const NavBar = (): JSX.Element => {
           {isWide ? open && <NavLinks /> : <NavLinks />}
         </Flex>
       </Container>
+      <div className="navend"/>
     </NavbarWrapper>
   );
 };
@@ -60,16 +61,17 @@ export const NavBar = (): JSX.Element => {
 export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
-      <Button type="btLink" as="a" color="grey4" href={`#home`}>
+      <Button type="btLink" as="a" href={`#home`}>
         Home
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#projects`}>
+      <Button type="btLink" as="a" href={`#projects`}>
         Projects
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#contact`}>
+      <Button type="btLink" as="a" href={`#contact`}>
         Contact
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#social-media`}>
+      <Button type="btLink" as="a"
+        href={`#social-media`}>
         Social Media
       </Button>
     </NavbarLinks>

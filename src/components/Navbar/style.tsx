@@ -3,8 +3,11 @@ import { Flex, Container } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 
 export const Navbar = styled("nav", {
-  background: "$grey0",
+  background: "transparent",
   borderBottom: "2px solid $brand1",
+  // borderBottomImage: "$gradientText",
+  // opacity: "0.8",
+  backdropFilter: "blur(5px)",
   position: "fixed",
   inset: 0,
   bottom: "auto",
@@ -20,6 +23,7 @@ export const Navbar = styled("nav", {
       flexDirection: "column",
     },
   },
+
 });
 
 export const LogoTipo = styled(Flex, {
