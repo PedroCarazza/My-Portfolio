@@ -26,7 +26,6 @@ export const Button = styled("button", {
         backgroundClip: "text",
         color: "transparent",
         borderColor: "transparent",
-        // fontWeight: "800",
         fontSize: "$title4",
         transition: "color 0.5s ease-in-out",
         "&:hover": {
@@ -36,7 +35,7 @@ export const Button = styled("button", {
       },
       primary: {
         background: "$gradientText",
-        borderColor: "$brand1",
+        border: "none",
         color: "$whiteFixed",
         "&:hover": {
           background: "$gradientText2",
