@@ -32,11 +32,6 @@ export const NavBar = (): JSX.Element => {
     setOpen(!open);
   };
 
-  // <nav className="navbar">
-  //   <a href="#">Home</a>
-  //   <a href="#">About</a>
-  // </nav>
-
   return (
     <NavbarWrapper className="navigation">
       <Container>
