@@ -62,7 +62,7 @@ export const Home = (): JSX.Element => {
               <Button as="a" type="primary" href="#projects">
                 See Projects
               </Button>
-              <Button as="a" type="outline" target="_blank" href={"https://1drv.ms/w/s!AiTYkTAo6Q93gYAOYJqAIPbBsG1n3w?e=hDZ7nM"} download="nome_do_seu_cv.pdf">
+              <Button as="a" type="outline" target="_blank" href="https://docs.google.com/document/d/1nzNOmFaPkBNkKEqHl1WPiUyu8-W3MrMR/edit?usp=share_link&ouid=103914030317596112553&rtpof=true&sd=true">
                 Download CV
               </Button>
               <Button
