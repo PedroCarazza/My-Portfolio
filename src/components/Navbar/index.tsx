@@ -32,8 +32,13 @@ export const NavBar = (): JSX.Element => {
     setOpen(!open);
   };
 
+  // <nav className="navbar">
+  //   <a href="#">Home</a>
+  //   <a href="#">About</a>
+  // </nav>
+
   return (
-    <NavbarWrapper>
+    <NavbarWrapper className="navigation">
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
@@ -63,6 +68,9 @@ export const NavLinks = (): JSX.Element => {
     <NavbarLinks>
       <Button type="btLink" as="a" href={`#home`}>
         Home
+      </Button>
+      <Button type="btLink" as="a" href={`#about`}>
+        About Me
       </Button>
       <Button type="btLink" as="a" href={`#projects`}>
         Projects

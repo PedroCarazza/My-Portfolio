@@ -1,12 +1,11 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex, Container } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
+import { SwitchLayoutGroupContext } from "framer-motion";
 
 export const Navbar = styled("nav", {
   background: "transparent",
-  borderBottom: "2px solid $brand1",
-  // borderBottomImage: "$gradientText",
-  // opacity: "0.8",
+  // borderBottom: "2px solid $brand1",
   backdropFilter: "blur(5px)",
   position: "fixed",
   inset: 0,
@@ -24,6 +23,28 @@ export const Navbar = styled("nav", {
     },
   },
 
+  "a": {
+    position: "relative",
+  },
+
+  "a::after":{
+    content: "",
+    position: "absolute",
+    left: "0",
+    bottom: "-2px",
+    width: "100%",
+    height: "3px",
+    background: "$gradientText",
+    borderRadius: "6px",
+    transformOrigin: "right",
+    transform: "scaleX(0)",
+    transition: "transform .2s",
+  },
+
+  "a:hover::after": {
+    transformOrigin: "left",
+    transform: "scaleX(1)",
+  },
 });
 
 export const LogoTipo = styled(Flex, {

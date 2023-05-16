@@ -33,7 +33,8 @@ export const DivAbout = styled("div", {
 
   p: {
     display: "flex",
-    fontSize: "$title3",
+    fontSize: "$title4",
+    fontWeight: "500",
     alignItems: "center",
   },
 
@@ -43,7 +44,7 @@ export const DivAbout = styled("div", {
     backgroundClip: "text",
     color: "transparent",
     fontWeight: "800",
-    fontSize: "40px"
+    fontSize: "$title1"
   },
   "@tablet": {
     backgroundPosition: "right -10% center",
@@ -69,11 +70,16 @@ export const HeaderContent = styled("div", {
   "@mobile": {
     width: "100%",
   },
-
+  ".name": {
+    color: "$brand2",
+    fontWeight: "600",
+    fontSize: "$title4",
+  },
   h1: {
-    color: "$brand1",
+    color: "$grey4",
+    fontSize: "$title1",
     span: {
-      // color: "$brand1",
+      color: "$brand1",
     },
   },
 });

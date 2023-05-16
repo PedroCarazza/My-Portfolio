@@ -8,6 +8,7 @@ import { Button } from "@/styles/Buttons";
 import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
+import { About } from "@/components/About";
 
 // Data
 import { stackData } from "@/utils/stackData";
@@ -38,9 +39,8 @@ export const Home = (): JSX.Element => {
       <Header>
         <Container>
           <HeaderContent>
-            <h1>
-              LEANDRO <span>ALVES</span>
-            </h1>
+            <p className="name">Hello, my name is</p>
+            <h1>Leandro <span>Alves</span></h1>
             <DivAbout>
               <p>I am a developer </p>
               <TypeAnimation sequence={[
@@ -63,7 +63,7 @@ export const Home = (): JSX.Element => {
                 See Projects
               </Button>
               <Button as="a" type="outline" target="_blank" href={"https://1drv.ms/w/s!AiTYkTAo6Q93gYAOYJqAIPbBsG1n3w?e=hDZ7nM"} download="nome_do_seu_cv.pdf">
-                Dwonload CV
+                Download CV
               </Button>
               <Button
                 color="grey5"
@@ -84,6 +84,7 @@ export const Home = (): JSX.Element => {
           </HeaderContent>
         </Container>
       </Header>
+      <About />
       <ProjectsArea id="projects">
         <Container>
           <ProjectAreaWrapperColumns>
