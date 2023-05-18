@@ -2,7 +2,7 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
-import backgroundImg from "@/public/static/img/background/leandromatrix.png";
+import backgroundImg from "@/public/static/img/background/minha-removebg-grey2.png";
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
