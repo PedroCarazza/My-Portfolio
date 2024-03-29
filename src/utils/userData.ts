@@ -1,9 +1,9 @@
 export const userData = {
-  nameUser: "Leandro Alves",
-  githubUser: "alves-leandro",
-  linkedinUser: "leandro-alves85",
-  whatsappNumber: "+5591981127963",
-  emailUser: "l.alves85@live.com.br",
+  nameUser: "Pedro Carazza",
+  githubUser: "PedroCarazza",
+  linkedinUser: "pedro-carazza",
+  whatsappNumber: "+5534996664175",
+  emailUser: "pedro_carazza@hotmail.com",
   instagramUser: "",
-  facebookUser: "lalves1985",
+  facebookUser: "PedrorCarazza",
 };

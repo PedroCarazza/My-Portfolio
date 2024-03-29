@@ -2,13 +2,13 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
-import backgroundImg from "@/public/static/img/background/minha-removebg-grey2.png";
+import backgroundImg from "@/public/static/img/background/background-avatar.jpeg";
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
   backgroundColor: "$grey1",
   padding: "12rem 0 8rem 0",
-  backgroundImage: `url(${backgroundImg})`,
+  // backgroundImage: `url(${backgroundImg})`,
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
@@ -58,6 +58,7 @@ export const DivAbout = styled("div", {
 })
 
 export const HeaderContent = styled("div", {
+  margin: "auto",
   justifyContent: "center",
   maxWidth: "100%",
   width: "36rem",

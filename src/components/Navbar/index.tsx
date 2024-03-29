@@ -21,7 +21,6 @@ export interface MenuButtonOpen {
 }
 
 export const NavBar = (): JSX.Element => {
-
   const isWide = useMedia({ maxWidth: "991px" });
 
   document.title = userData.nameUser;
@@ -37,7 +36,9 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
-            <LogoTipoText>ALVES<span> Portifolio</span></LogoTipoText>
+            <LogoTipoText>
+              <span> Portifolio</span>
+            </LogoTipoText>
           </LogoTipo>
           {isWide && (
             <Button
@@ -49,11 +50,9 @@ export const NavBar = (): JSX.Element => {
             </Button>
           )}
         </NavbarMobileArea>
-        <Flex>
-          {isWide ? open && <NavLinks /> : <NavLinks />}
-        </Flex>
+        <Flex>{isWide ? open && <NavLinks /> : <NavLinks />}</Flex>
       </Container>
-      <div className="navend"/>
+      <div className="navend" />
     </NavbarWrapper>
   );
 };
@@ -62,17 +61,16 @@ export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
       <Button type="btLink" as="a" href={`#home`}>
-        Home
+        Início
       </Button>
       <Button type="btLink" as="a" href={`#projects`}>
-        Projects
+        Projetos
       </Button>
       <Button type="btLink" as="a" href={`#contact`}>
-        Contact
+        Contato
       </Button>
-      <Button type="btLink" as="a"
-        href={`#social-media`}>
-        Social Media
+      <Button type="btLink" as="a" href={`#social-media`}>
+        Mídia Social
       </Button>
     </NavbarLinks>
   );
